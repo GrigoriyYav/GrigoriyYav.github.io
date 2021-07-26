@@ -1,0 +1,42 @@
+.header_content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.circle
+{   
+    position: relative;
+    top: 33px;
+    left: 138px;
+    height: 36px;
+    width: 36.5px;
+    border-radius: 50px;
+    background-color: #E5261E;
+
+}
+
+.triangle-4
+{   
+    position: absolute;
+    left: 8px;
+    top: 0px;
+    height: 0px;
+    width: 0px;
+    border-top: 17.5px solid transparent;
+    border-bottom: 17.5px solid transparent;
+    border-left: 29px solid #ffffff;
+}
+
+.logo_name{
+    position: relative;
+    top: 2px;
+    left: 178px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+}
