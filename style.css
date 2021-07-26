@@ -24,12 +24,12 @@
     width: 0px;
     border-top: 17.5px solid transparent;
     border-bottom: 17.5px solid transparent;
-    border-left: 29px solid #ffffff;
+    border-left: 31px solid #ffffff;
 }
 
 .logo_name{
     position: relative;
-    margin-top: 66px;
+    margin-top: 76px;
     left: 150px;
     font-family: Rubik;
     font-style: normal;
