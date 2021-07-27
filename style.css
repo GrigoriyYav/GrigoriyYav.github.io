@@ -72,10 +72,20 @@
     border-right: 0 none;
     height: 25px;
     padding: 0;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 textarea:focus, input:focus{
     outline: none;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .header_search_button{
@@ -107,4 +117,9 @@ textarea:focus, input:focus{
     box-shadow: 0;
     margin-top: 1px;
     cursor: pointer;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 }
