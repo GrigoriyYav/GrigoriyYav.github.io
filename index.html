@@ -28,8 +28,23 @@
         </div>
     </header>
     <main>
-        <span>some content</span>
+        <nav class="tabs">
+            <div class="tabs_nav">
+              <a class="tabs_link tabs_link_active films" href="#content-1">Фильмы</a>
+              <a class="tabs_link tv" href="#content-2">Телеканалы</a>
+            </div>
+            <div class="tabs_content">
+              <div class="tabs_pane tabs_pane_show" id="content-1">
+                Содержимое 1
+              </div>
+              <div class="tabs_pane" id="content-2">
+                Содержимое 2
+              </div>
+            </div>
+        </nav>
+            
+            
     </main>
-
+    <script src="script.js"></script>
 </body>
 </html>

@@ -123,3 +123,73 @@ textarea:focus, input:focus{
     font-size: 16px;
     line-height: 19px;
 }
+
+main{
+    max-width: 1180px;
+    margin:auto;
+}
+
+.tabs {
+    border: 0px;
+  }
+  
+.tabs_nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    background: #ffffff;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.films{
+    margin-left: 35%;
+}
+.tv{
+    margin-right: 30%;
+}
+  
+.tabs_link {
+    text-decoration: none;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: right;  
+    color: #333333;
+}
+  
+.tabs_link_active {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: right;  
+    color: #E5261E;
+    padding-bottom: 9px;
+    border: 2px solid #E5261E; 
+    border-top: 0;
+    border-left: 0;
+    border-right: 0; 
+  }
+  
+.tabs_link:not(.tabs_link_active):hover,
+.tabs_link:not(.tabs_link_active):focus {
+    background-color: #ffffff;
+  }
+  
+.tabs_content {
+    padding: 1rem;
+  }
+  
+.tabs_pane {
+    display: none;
+  }
+  
+.tabs_pane_show {
+    display: block;
+  }
