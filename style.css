@@ -1,13 +1,40 @@
 .header_content{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header_logo{
+    display:flex;
+    align-items: center;
+}
+/*
+.heade_logo_img{
+
+}
+*/
+/*
+.header_search{
+    display:flex;
+}
+*/
+/*
+.header_login{
+    display:flex;
+}
+*/
+/*
+.header_content{
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+}*/
 
-.circle{   
+.circle{ 
     position: relative;
-    top: 32px;
-    left: 130px;
+    top: 17px;
+    left: -8px;  
     height: 36px;
     width: 36.5px;
     border-radius: 50px;
@@ -17,9 +44,8 @@
 
 .triangle-4
 {   
-    position: absolute;
-    left: 8px;
-    top: 0px;
+    position: relative;
+    top: -19px; 
     height: 0px;
     width: 0px;
     border-top: 17.5px solid transparent;
@@ -28,13 +54,9 @@
 }
 
 .logo_name{
-    position: relative;
-    margin-top: 76px;
-    left: 150px;
     font-family: Rubik;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-
 }
