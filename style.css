@@ -217,12 +217,7 @@ main{
     flex-wrap: wrap;
 }
 
-.films_1{
-    max-width: 750px;
-    max-height: 450px;
-}
-
-#films_1 .text{
+#films .text{
     position: relative;
     top:-390px;
     left: 10px;
@@ -234,9 +229,8 @@ main{
     font-size: 16px;
     line-height: 140%;
     color: #F2F2F2;
-    
 }
 
-#films_1:hover .text{
+#films:hover .text{
     visibility:visible;
 }
