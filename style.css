@@ -129,10 +129,11 @@ main{
     margin:auto;
 }
 
+/*
 .tabs {
-    border: 0px;
+
   }
-  
+*/
 .tabs_nav {
     display: flex;
     flex-wrap: wrap;
@@ -216,8 +217,14 @@ main{
     align-items: center;
     flex-wrap: wrap;
 }
+#film_item{
+   display: flex;
+   flex-direction: column;
+   max-height: 434px;
+}
 
-#films .text{
+#film_item .text{
+    margin: 0px;
     position: relative;
     top:-390px;
     left: 10px;
@@ -229,8 +236,28 @@ main{
     font-size: 16px;
     line-height: 140%;
     color: #F2F2F2;
+    padding-top: 20px;
 }
 
-#films:hover .text{
+#film_item:hover .text{
+    margin: 0px;
+    padding-top: 20px;
     visibility:visible;
+}
+
+#film_item .film_name{
+    position: relative;
+    top: -30px;
+    margin: 0;
+    max-width: 280px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.film_img{
+    border-radius: 10px;
 }
