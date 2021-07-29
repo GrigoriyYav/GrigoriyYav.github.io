@@ -218,6 +218,7 @@ main{
     flex-wrap: wrap;
 }
 #film_item{
+    position: relative;
    display: flex;
    flex-direction: column;
    max-height: 434px;
@@ -236,7 +237,7 @@ main{
     font-size: 16px;
     line-height: 140%;
     color: #F2F2F2;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 #film_item:hover .text{
@@ -246,8 +247,8 @@ main{
 }
 
 #film_item .film_name{
-    position: relative;
-    top: -30px;
+    position: absolute;
+    top: 380px;
     margin: 0;
     max-width: 280px;
     font-family: Rubik;
