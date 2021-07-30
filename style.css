@@ -7,6 +7,12 @@
     flex-wrap: wrap;
 }
 
+body{
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
 .header_logo{
     display:flex;
     align-items: center;
@@ -360,4 +366,57 @@ main{
 .genres_item_horrors{
     background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
     box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+
+main{
+    padding-bottom: 176px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 120px;
+    overflow: hidden;
+    background-color: #F2F2F2;
+}
+
+.footer_content{
+    width: 1180px;
+    height: 120px;
+    margin: auto;
+}
+
+.footer_img{
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 39.98px;
+    float: left;
+}
+
+.footer_text{
+    margin: 0;
+    display: block;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    padding-top: 6px;
+}
+
+.footer_text:first-of-type{
+    padding-top: 22px;
+}
+
+.footer_link{
+    text-decoration: none;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1F4766;
+    padding-top: 10px;
 }
