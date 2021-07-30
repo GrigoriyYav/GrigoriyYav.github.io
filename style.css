@@ -238,14 +238,18 @@ main{
     font-size: 16px;
     line-height: 140%;
     color: #F2F2F2;
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     padding-left: 0px;
 }
 
 #film_item:hover .text{
     margin: 0px;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-left: 10px;
     visibility:visible;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
 
 #film_item .film_name{
@@ -262,7 +266,18 @@ main{
 }
 
 .film_img{
+    border-radius: 11px;
+}
+
+.film_img_background{
     border-radius: 10px;
+    background-color:rgba(0,0,0,0.6);
+    height: 370px;
+}
+#film_item:hover .film_img{
+    opacity:0.3;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
 
 .films_content > :last-child#film_item{
