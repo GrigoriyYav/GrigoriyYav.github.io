@@ -434,7 +434,7 @@ footer{
 
 .channels_logo{
     padding-left: 175.44px;
-    padding-right: 175.33px;
+
     padding-top: 49px;
     padding-bottom: 49px;
     float: left;
@@ -449,6 +449,7 @@ footer{
     color: #333333;
     margin: 0;
     margin-top: 21px;
+    margin-left: 175.33px;
 }
 
 .chennels_text{
