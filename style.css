@@ -420,3 +420,54 @@ footer{
     color: #1F4766;
     padding-top: 10px;
 }
+
+.channels{
+    display: flex;
+    flex-direction: column;
+}
+
+.channels_item{
+    width: 1180px;
+    height: 162px;
+    margin: auto;
+}
+
+.channels_logo{
+    padding-left: 175.44px;
+    padding-right: 175.33px;
+    padding-top: 49px;
+    padding-bottom: 49px;
+    float: left;
+}
+
+.channels_header{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    margin: 0;
+    margin-top: 21px;
+}
+
+.chennels_text{
+    margin: 0;
+    margin-top: 12px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.chennels_text:first-of-type{
+    margin-top: 17px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E5261E;
+}
