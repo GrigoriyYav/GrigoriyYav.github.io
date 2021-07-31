@@ -11,7 +11,6 @@ body{
     margin: 0;
     position: relative;
     min-height: 100vh;
-    
 }
 
 .header_logo{
@@ -130,17 +129,19 @@ textarea:focus, input:focus{
     font-size: 16px;
     line-height: 19px;
 }
-
+/*
 main{
     max-width: 1180px;
     margin:auto;
 }
-
-/*
-.tabs {
-
-  }
 */
+
+.tabs {
+    max-width: 1180px;
+    margin:auto;
+    padding-bottom: 176px;
+  }
+
 .tabs_nav {
     display: flex;
     flex-wrap: wrap;
@@ -370,11 +371,11 @@ main{
     background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
     box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
 }
-
+/*
 main{
     padding-bottom: 176px;
 }
-
+*/
 footer{
     position: absolute;
     bottom: 0;
@@ -498,7 +499,11 @@ body::-webkit-scrollbar {
 }
   
 /* Hide scrollbar for IE, Edge and Firefox */
-.body {
+.scroll{
     -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    scrollbar-width: none; /* Firefox */
+}
+.scroll_firefox{
+    scrollbar-width: thin;
+    scrollbar-color: #BDBDBD #FFFFFF
 }
