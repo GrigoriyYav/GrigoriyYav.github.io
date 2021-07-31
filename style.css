@@ -273,6 +273,7 @@ main{
 
 .film_img{
     border-radius: 11px;
+    cursor: pointer;
 }
 
 .film_img_background{
@@ -318,6 +319,7 @@ main{
     border-radius: 6px;
     text-align: center;
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .genres_content > :last-child#genres_item{
