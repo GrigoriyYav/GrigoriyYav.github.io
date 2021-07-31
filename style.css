@@ -507,3 +507,37 @@ body::-webkit-scrollbar {
     scrollbar-width: thin;
     scrollbar-color: #BDBDBD #FFFFFF
 }
+
+.rbk_logo{
+    padding-left: 175.44px;
+    padding-right: 175.33px;
+    padding-top: 49px;
+    padding-bottom: 49px;
+    float: left;
+    width: 114px;
+    height: 65px;
+}
+
+.triangle_rbk_1
+{   
+    position: relative;
+    top: 4.84px;
+    left: 28.34px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 24.84px; /* размер и форма */ 
+    border-color: #92CFAE transparent transparent #92CFAE;  /* red — цвет */ 
+}
+
+.triangle_rbk_2
+{   
+    position: relative;
+    top: -39.84px;
+    left: 32.66px; 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 24.84px; /* размер и форма */ 
+    border-color:transparent #2A8288 #2A8288 transparent;  /* red — цвет */ 
+}
