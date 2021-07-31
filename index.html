@@ -27,7 +27,24 @@
         <button class="header_search_button" type="submit">Найти</button>
       </div>
       <div class="header_login">
-        <button class="button_login" type="submit">Войти</button>
+        <button onclick="document.getElementById('id01').style.display='block'" class="button_login" type="submit">Войти</button>
+          <div id="id01" class="modal">
+            <form class="modal-content animate" action="" method="post">
+              <div class="login_header"> Вход</div>
+              <div class="container">
+                <input type="text" placeholder="Логин" name="uname" required>
+
+                <input type="password" placeholder="Пароль" name="psw" required>
+                <label class="remember_box">
+                  <input class="remember_checkbox" type="checkbox" checked="checked" name="remember"> 
+                  <p style="margin: 0 0 0 8px;">Запомнить</p> 
+                </label>
+
+                <button class="login_button" type="submit">Войти</button>
+
+              </div>
+            </form>
+          </div>
       </div>
     </header>
     <main>
