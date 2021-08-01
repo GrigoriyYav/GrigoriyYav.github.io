@@ -92,6 +92,8 @@ window.onclick = function(event) {
          $("#username").val($.cookie("username"));
          //Fill in the username value stored in the cookie to input#password
          $("#password").val($.cookie("password"));
+
+         $("#login_name").val($.cookie("username"));
          //Keep the "remember me" checkbox selected
          $('input:checkbox').attr("checked", true);
        }
@@ -100,10 +102,12 @@ window.onclick = function(event) {
     function myLogin(){
       username = $('#username').val(); //username
       password = $('#password').val();
-      
-      alert("login successful!!");
-      //After returning the login successful information
-      
+            
+      document.getElementById("button_login").style.background = "#ffffff";
+      document.getElementById("button_login").style.color = "#E5261E";
+      $("#login_name").val(username);
+      document.getElementById("button_login").textContent = "Выйти";
+
       remember = $('#remember').is(':checked') ? 1 : 0;
       //If "Remember that I was selected, save name and password information"
       if (remember == 1) {
@@ -114,6 +118,9 @@ window.onclick = function(event) {
           expires: 7
         });
         console.log($.cookie("username"));
+
+        $("#login_name").val($.cookie("username"));
+        
         //If "Remember that I was not selected, then remove the previously saved information."
       } else {
         $.removeCookie('username');

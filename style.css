@@ -26,13 +26,27 @@ body{
 .header_search{
     display:flex;
     align-items: center;
+    margin-left: 80px;
 }
 
-/*
+
 .header_login{
     display:flex;
+    align-items: center;
 }
-*/
+
+.login_name{
+    position: sticky;
+    width: 80px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
 /*
 .header_content{
     display: flex;
@@ -113,7 +127,7 @@ textarea:focus, input:focus{
 
 }
 */
-.button_login{
+#button_login{
     color: white;
     width: 113px;
     height: 38px;
