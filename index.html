@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
   </head>
   <body>
     <header class="header_content">
@@ -24,23 +23,23 @@
       </div>
       <div class="header_search">
         <input class="header_search_input" type="text" placeholder="Поиск..." />
-        <button class="header_search_button" type="submit">Найти</button>
+        <button class="header_search_button" type="button">Найти</button>
       </div>
       <div class="header_login">
         <button onclick="document.getElementById('id01').style.display='block'" class="button_login" type="submit">Войти</button>
           <div id="id01" class="modal">
-            <form class="modal-content animate" action="" method="post">
+            <form class="modal-content animate" action="" <!--method="post"-->>
               <div class="login_header"> Вход</div>
               <div class="container">
-                <input type="text" placeholder="Логин" name="uname" required>
+                <input id="username" type="text" placeholder="Логин" name="uname" required>
 
-                <input type="password" placeholder="Пароль" name="psw" required>
+                <input id="password" type="password" placeholder="Пароль" name="psw" required >
                 <label class="remember_box">
-                  <input class="remember_checkbox" type="checkbox" checked="checked" name="remember"> 
+                  <input id="remember" class="remember_checkbox" type="checkbox" checked="checked" name="remember"> 
                   <p style="margin: 0 0 0 8px;">Запомнить</p> 
                 </label>
 
-                <button class="login_button" type="submit">Войти</button>
+                <button id="login" onclick="myLogin()" class="login_button" type="button">Войти</button>
 
               </div>
             </form>

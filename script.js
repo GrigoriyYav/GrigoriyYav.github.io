@@ -61,6 +61,13 @@ var $tabs = function (target) {
     
     $tabs('.tabs');
 
+    
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+
+
     // Get the modal
 var modal = document.getElementById('id01');
 
@@ -70,3 +77,46 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+    //-----------------------------------------------------------------
+    //-----------------------------------------------------------------
+    //-----------------------------------------------------------------
+    //-----------------------------------------------------------------
+    //Check cookie
+    $(document).ready(function(){
+      console.log("ok");
+      console.log($.cookie("username"));
+       if ($.cookie("username") != null) {
+         console.log("ok");
+         //Fill in the value of username stored in the cookie to input#username
+         $("#username").val($.cookie("username"));
+         //Fill in the username value stored in the cookie to input#password
+         $("#password").val($.cookie("password"));
+         //Keep the "remember me" checkbox selected
+         $('input:checkbox').attr("checked", true);
+       }
+    });
+    
+    function myLogin(){
+      username = $('#username').val(); //username
+      password = $('#password').val();
+      
+      alert("login successful!!");
+      //After returning the login successful information
+      
+      remember = $('#remember').is(':checked') ? 1 : 0;
+      //If "Remember that I was selected, save name and password information"
+      if (remember == 1) {
+        $.cookie("username", username, {
+          expires: 7
+        });
+        $.cookie("password", password, {
+          expires: 7
+        });
+        console.log($.cookie("username"));
+        //If "Remember that I was not selected, then remove the previously saved information."
+      } else {
+        $.removeCookie('username');
+        $.removeCookie('password');
+      }
+    }
