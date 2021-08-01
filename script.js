@@ -94,6 +94,10 @@ window.onclick = function(event) {
          $("#password").val($.cookie("password"));
 
          $("#login_name").val($.cookie("username"));
+
+         document.getElementById("button_login").style.background = "#ffffff";
+         document.getElementById("button_login").style.color = "#E5261E";
+         document.getElementById("button_login").textContent = "Выйти";
          //Keep the "remember me" checkbox selected
          $('input:checkbox').attr("checked", true);
        }
